@@ -5,6 +5,6 @@ Spree::Core::Engine.add_routes do
     end
   end
   constraints(Spree::StaticPage) do
-    get '/(*path)', to: 'static_content#show', as: 'static'
+    get '/c/(*path)', to: 'static_content#show', as: 'static'
   end
 end
